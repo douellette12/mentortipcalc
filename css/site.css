@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.machine-container{
+    background-color: white;
+    height: 380px;
+    width: 800px;
+    border-radius: 15px;
+    padding: 2em;
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.bill-box{
+    height: 100%;
+    width: 100%;
+}
+
+.total-box{
+    background-color: hsl(183, 100%, 15%);
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 2em;
+    color: white;
+}
+.tip-total{
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    text-align: right;
+}
+.tip-tag{
+    color: hsl(184, 14%, 56%);
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn-reset{
+    bottom: 0;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    margin-top: 5.5em;
+    font-weight: 700;
+}
+
+.btn-tip{
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    width: 100%;
+}
+/*.btn-tip:hover{
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    width: 100%;
+}*/
+/*.btn-tip:active{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}*/
+.btn-check:checked + .btn-tip{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+
+.custom-tip{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);    
+}
+.custom-tip::placeholder{
+    text-align: center;
+}
+
+.bill-bg{
+    background-image: url("./images/icon-dollar.svg") no-repeat scroll 7px 7px;
+    padding-left: 30px;
+}
+ 
+input[type="text"]:focus,
+input[type="number"]:focus{
+    border: 5px;
+    border-color: hsl(172, 67%, 45%);
+    background-color: white;
+    box-shadow: 0 none;
+}
+input[type="text"],
+input[type="number"]{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+
+}
